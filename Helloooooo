@@ -1,0 +1,139 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNcQywNMmvqDV/C7crkDboQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Bakanium-Shinzo/PlantDoc-Object-Detection-Dataset/blob/master/Helloooooo\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip3 install h5py \n",
+        "\n",
+        "!pip install typing-extensions \n",
+        "!pip install wheel "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DFWnLntGIesn",
+        "outputId": "b82c1a1f-0e1e-4152-a1eb-b6690d0450a2"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Requirement already satisfied: h5py in /usr/local/lib/python3.7/dist-packages (3.1.0)\n",
+            "Requirement already satisfied: numpy>=1.14.5 in /usr/local/lib/python3.7/dist-packages (from h5py) (1.21.6)\n",
+            "Requirement already satisfied: cached-property in /usr/local/lib/python3.7/dist-packages (from h5py) (1.5.2)\n",
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Requirement already satisfied: typing-extensions in /usr/local/lib/python3.7/dist-packages (4.1.1)\n",
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Requirement already satisfied: wheel in /usr/local/lib/python3.7/dist-packages (0.37.1)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install torch==1.8.2 torchvision==0.9.2 torchaudio===0.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cpu"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u4k9ddrGIpN2",
+        "outputId": "f30d1f07-fe89-444a-f44f-9a1077166cc6"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/, https://download.pytorch.org/whl/lts/1.8/cpu\n",
+            "Requirement already satisfied: torch==1.8.2 in /usr/local/lib/python3.7/dist-packages (1.8.2+cpu)\n",
+            "Requirement already satisfied: torchvision==0.9.2 in /usr/local/lib/python3.7/dist-packages (0.9.2+cpu)\n",
+            "Requirement already satisfied: torchaudio===0.8.2 in /usr/local/lib/python3.7/dist-packages (0.8.2)\n",
+            "Requirement already satisfied: typing-extensions in /usr/local/lib/python3.7/dist-packages (from torch==1.8.2) (4.1.1)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (from torch==1.8.2) (1.21.6)\n",
+            "Requirement already satisfied: pillow>=4.1.1 in /usr/local/lib/python3.7/dist-packages (from torchvision==0.9.2) (7.1.2)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!git clone https://github.com/ultralytics/yolov5"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yue8yLWBIu1-",
+        "outputId": "b81647c6-53d9-422d-8e82-f341c026a3d7"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "fatal: destination path 'yolov5' already exists and is not an empty directory.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!cd yolov5 & pip install -r requirements.txt "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z5qTQwBlIyXO",
+        "outputId": "0404d442-b32d-4a53-f299-cc8e0eb90c43"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[31mERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'\u001b[0m\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
